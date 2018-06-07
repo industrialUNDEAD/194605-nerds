@@ -130,3 +130,16 @@ a {
   font-weight: 700;
   color: #000000;
 }
+
+.projects-list img {
+  opacity: 0.2;
+}
+
+.projects-list img:hover {
+  opacity: 1;
+}
+
+.projects-list img:active {
+  opacity: 0.1;
+}
+
