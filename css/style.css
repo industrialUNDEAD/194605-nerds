@@ -118,3 +118,15 @@ a {
   font-weight: 700;
   color: #000000;
 }
+
+.statistics-info .table-desc {
+  font-weight: 700;
+  color: #000000;
+}
+
+.statistics-info .top-line {
+  font-size: 45px;
+  line-height: 10.06px;
+  font-weight: 700;
+  color: #000000;
+}
