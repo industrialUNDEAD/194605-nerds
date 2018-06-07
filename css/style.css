@@ -99,10 +99,22 @@ a {
   font-weight: 700;
 }
 
-.button-application {
+.services-item .button-application {
   background-color: #00ca74;
 }
 
-.button-presentation {
+.services-item .button-presentation {
   background-color: #efc84a;
+}
+
+.about-us .tagline {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.about-us .our-service {
+  font-weight: 700;
+  color: #000000;
 }
