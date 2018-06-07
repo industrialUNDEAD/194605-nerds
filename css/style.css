@@ -176,4 +176,11 @@ a {
   background-color: #d7373b;
 }
 
+.notification-block .lead {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+}
+
 
