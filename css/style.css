@@ -41,3 +41,15 @@ a {
   background-color: #eeeeee;
 
 }
+
+.main-header a {
+  color: #000000;
+}
+
+.main-header a:hover {
+  color: #fb565a;
+}
+
+.main-header a:active {
+  opacity: 0.3;
+}
