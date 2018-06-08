@@ -183,4 +183,109 @@ a {
   color: #000000;
 }
 
+.modal-feedback .modal-title {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.form-feedback label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.form-feedback textarea,
+ input {
+  border: 2px solid #d7dcde;
+}
+
+.form-feedback textarea::-webkit-input-placeholder,
+ input::-webkit-input-placeholder {
+  opacity: 0.5;
+}
+
+.form-feedback textarea::-moz-placeholder,
+ input::-moz-placeholder {
+  opacity: 0.5;
+}
+
+.form-feedback textarea:-moz-placeholder,
+ input:-moz-placeholder {
+  opacity: 0.5;
+}
+
+.form-feedback textarea:-ms-input-placeholder,
+ input:-ms-input-placeholder {
+  opacity: 0.5;
+}
+
+.form-feedback textarea:hover,
+ input:hover {
+  border: 2px solid #b4b9bb;
+}
+
+.form-feedback textarea:focus,
+ input:focus {
+  border: 2px solid #000000;
+}
+
+.form-feedback textarea:focus::-webkit-input-placeholder,
+ input:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.form-feedback textarea:focus::-moz-placeholder,
+ input:focus::-moz-placeholder {
+  opacity: 1;
+}
+
+.form-feedback textarea:focus:-moz-placeholder,
+ input:focus:-moz-placeholder {
+  opacity: 1;
+}
+
+.form-feedback textarea:focus:-ms-input-placeholder,
+ input:focus:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.form-feedback input:invalid {
+  border: 2px solid #7f2d2f;
+}
+
+.form-feedback input:invalid::-webkit-input-placeholder {
+  color: #e74246;
+  opacity: 1;
+}
+
+.form-feedback input:invalid::-moz-placeholder {
+  color: #e74246;
+  opacity: 1;
+}
+
+.form-feedback input:invalid:-moz-placeholder {
+  color: #e74246;
+  opacity: 1;
+}
+
+.form-feedback input:invalid:-ms-input-placeholder {
+  color: #e74246;
+  opacity: 1;
+}
+
+.modal-feedback .modal-close {
+  opacity: 0.3;
+}
+
+.modal-feedback .modal-close:hover {
+  opacity: 1;
+}
+
+.modal-feedback .modal-close:active {
+  opacity: 0.1;
+}
+
+
 
