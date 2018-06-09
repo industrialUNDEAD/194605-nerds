@@ -229,6 +229,7 @@ a {
 .form-feedback textarea:focus,
  input:focus {
   border: 2px solid #000000;
+  outline: 0;
 }
 
 .form-feedback textarea:focus::-webkit-input-placeholder,
@@ -285,6 +286,16 @@ a {
 
 .modal-feedback .modal-close:active {
   opacity: 0.1;
+}
+
+/*--------------------------------страница каталога-------------------------*/
+
+.inner-page .header-logo:hover {
+  opacity: 0.8;
+}
+
+.inner-page .header-logo:active {
+  opacity: 0.3;
 }
 
 
