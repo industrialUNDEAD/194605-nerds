@@ -51,7 +51,7 @@ a {
 }
 
 .button:active {
-  background-color: #d7373b;
+  background-color: #d7373b; /*надо разобраться, как менять полупрозрачность, только у текста*/
   opacity: 0.3;
 }
 
@@ -327,19 +327,30 @@ input[type="checkbox"] {
 }
 
 
-.filter .button-filter {
+.pagination-list {
+  list-style: none;
+}
+
+.filter .button-filter,
+.pagination-list .pagination-item {
   font-weight: 500;
   color: #000000;
   background-color: #eeeeee;
 }
 
-.filter .button-filter:hover {
+.filter .button-filter:hover,
+.pagination-list .pagination-item:hover {
   background-color: #dfdfdf;
 }
 
-.filter .button-filter:active {
+.filter .button-filter:active,
+.pagination-list .pagination-item:active {
   background-color: #d5d5d5;
   opacity: 0.3;
+}
+
+.pagination-item-current {
+  background-color: #ffffff;
 }
 
 .sort .sort-title {
