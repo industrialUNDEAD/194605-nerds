@@ -27,10 +27,10 @@
     <section class="filters">
       <h2 class="visually-hidden">Фильтр шаблонов</h2>
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-        <label>Стоимость:</label>
+        <label class="form-price">Стоимость:</label>
         <input type="range" name="price-filter" min="0" max="15000">
         <fieldset>
-          <legend>Сетка:</legend>
+          <legend class="group-grid">Сетка:</legend>
           <ul>
             <li class="filter-option">
               <input class="visually-hidden" type="radio" name="layout-selection" value="adaptive" id="filter-adaptive" checked>
@@ -47,11 +47,11 @@
           </ul>
         </fieldset>
         <fieldset>
-          <legend>Особенности:</legend>
+          <legend class="group-features">Особенности:</legend>
           <ul>
             <li class="filter-option">
               <input class="visually-hidden" type="checkbox" name="slider" id="filter-slider" checked>
-              <label for="filter-slider"> Слайдер</label>
+              <label for="filter-slider">Слайдер</label>
             </li>
             <li class="filter-option">
               <input class="visually-hidden" type="checkbox" name="advantages" id="filter-advantages">
@@ -75,11 +75,11 @@
       </form>
     </section>
     <div class="sort">
-      <p>сортировать:</p>
+      <p class="sort-title">сортировать:</p>
       <ul class="sort-list">
-        <li class="sort-item"><a href="#">По цене</a></li>
-        <li class="sort-item"><a href="#">По типу</a></li>
-        <li class="sort-item"><a href="#">По названию</a></li>
+        <li><a class="sort-item" href="#">По цене</a></li>
+        <li><a class="sort-item" href="#">По типу</a></li>
+        <li><a class="sort-item" href="#">По названию</a></li>
       </ul>
       <div class="sort-buttons">
         <a class="sort-buttons button-bottom" href="#">Сортировка от наибольшего</a>

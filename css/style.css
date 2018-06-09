@@ -298,5 +298,70 @@ a {
   opacity: 0.3;
 }
 
+.container .title {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.filter .form-price,
+.filter .group-grid,
+.filter .group-features,
+.sort .sort-title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  opacity: 0.4;
+}
+
+input[type="radio"],         /*---тут надо будет разобраться как менять при наведении*/
+input[type="checkbox"] {
+  opacity: 1;
+  color: red; 
+}
+
+
+.filter .button-filter {
+  font-weight: 500;
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.filter .button-filter:hover {
+  background-color: #dfdfdf;
+}
+
+.filter .button-filter:active {
+  background-color: #d5d5d5;
+  opacity: 0.3;
+}
+
+.sort .sort-title {
+  line-height: 18px;
+}
+
+.sort-list {
+  list-style: none;
+}
+
+.sort-list .sort-item {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.sort-list .sort-item:hover {
+  opacity: 0.6;
+}
+
+.sort-list .sort-item:active {
+  opacity: 1;
+}
+
 
 
