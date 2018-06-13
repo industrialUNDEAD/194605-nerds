@@ -22,6 +22,8 @@
 body {
   margin: 0;
   padding: 0;
+  width: 1440px;
+  min-width: 1440px;
   font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -74,7 +76,13 @@ a {
 
 /*----------------------------------шапка сайта---------------------------------------*/
 
+.main-header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .main-header {
+  width: 100%;
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
@@ -94,7 +102,12 @@ a {
   opacity: 0.3;
 }
 
-.navigation-list {
+.main-navigation  .navigation-list {
+  display: flex;
+  justify-content: space-between;
+  width: 440px;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
