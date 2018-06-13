@@ -79,6 +79,9 @@ a {
 .main-header .container {
   display: flex;
   justify-content: space-between;
+  padding-top: 15px;
+  align-items: center;
+  outline: 2px dotted red;
 }
 
 .main-header {
