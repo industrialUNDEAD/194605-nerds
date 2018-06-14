@@ -117,7 +117,21 @@ a {
 /*------------------------------------шапка сайта--------------------------------------*/
 
 .slider {
+  margin-bottom: 80px;
   background-color: #eeeeee;
+}
+
+.slide-content {
+  width: 380px;
+}
+
+.slide-logo {
+  width: 760px;
+}
+
+.slider-block {
+  display: flex;
+  justify-content: space-between;
 }
 
 .slider-block .slogan {
@@ -125,6 +139,25 @@ a {
   line-height: 55px;
   font-weight: 500;
   color: #000000;
+}
+
+.services {
+  margin-bottom: 80px;
+  padding-bottom: 80px;
+  border-bottom: 2px solid #eeeeee;
+}
+
+.services .services-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 1100px;
+  list-style: none;
+}
+
+.services-list .services-item {
+  width: 300px;
 }
 
 .services-item .services-title {
