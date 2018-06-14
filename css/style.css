@@ -175,6 +175,19 @@ a {
   background-color: #efc84a;
 }
 
+.columns-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.columns-wrapper .about-us {
+  width: 660px;
+}
+
+.colimns-wrapper .statistics {
+  width: 360px;
+} 
+
 .about-us .tagline {
   font-size: 45px;
   line-height: 45px;
