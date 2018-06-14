@@ -178,6 +178,7 @@ a {
 .columns-wrapper {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 77px;
 }
 
 .columns-wrapper .about-us {
@@ -210,6 +211,19 @@ a {
   line-height: 10.06px;
   font-weight: 700;
   color: #000000;
+}
+
+.studio-projects {
+  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
+}
+
+.studio-projects .projects-list {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 45px 0;
+  list-style: none;
 }
 
 .projects-list img {
