@@ -427,7 +427,15 @@ a {
   opacity: 0.3;
 }
 
-.container .title {
+.page-title-wraper {
+  background-color: #eeeeee;
+}
+
+.container .page-title {
+  margin: 0 auto;
+  padding-top: 102px;
+  padding-bottom: 117px; 
+  width: 760px;
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
