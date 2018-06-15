@@ -28,7 +28,7 @@
         <h1 class="page-title">Магазин готовых шаблонов</h1>
       </div>
     </div>
-    <div class="container">
+    <div class="container catalog-wrapper">
       <section class="filters">
         <h2 class="visually-hidden">Фильтр шаблонов</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
@@ -79,57 +79,70 @@
           <button class="button button-filter" type="submit">Показать</button>
         </form>
       </section>
-
       <section class="catalog">
         <h2 class="visually-hidden">Каталог шаблонов</h2>
         <div class="sort">
           <p class="sort-title">сортировать:</p>
-          <ul class="sort-list">
-            <li><a class="sort-item" href="#">По цене</a></li>
-            <li><a class="sort-item" href="#">По типу</a></li>
-            <li><a class="sort-item" href="#">По названию</a></li>
-          </ul>
-          <div class="sort-buttons">
-            <a class="sort-buttons button-bottom" href="#">Сортировка от наибольшего</a>
-            <a class="sort-buttons button-top" href="#">Сортировка от наименьшего</a>
+          <div class="sort-wrapper">
+            <ul class="sort-list">
+              <li><a class="sort-item" href="#">По цене</a></li>
+              <li><a class="sort-item" href="#">По типу</a></li>
+              <li><a class="sort-item" href="#">По названию</a></li>
+            </ul>
+            <div class="sort-buttons">
+              <a class="sort-buttons button-bottom" href="#">Сортировка от наибольшего</a>
+              <a class="sort-buttons button-top" href="#">Сортировка от наименьшего</a>
+            </div>
           </div>
         </div>
         <ul class="catalog-list">
           <li class="catalog-item">
             <img src="img/img-sedona.jpg" width="360" height="576" alt="шаблон сайта Седона">
-            <h3><a href="#"> Sedona</a></h3>
-            <p>Информационный сайт для туристов</p>
-            <a class="button" href="#">9 990руб.</a>
+            <div class="item-wrapper">
+              <h3 class="item-title"><a href="#"> Sedona</a></h3>
+              <p class="item-desc">Информационный сайт для туристов</p>
+              <a class="button" href="#">9 990руб.</a>
+            </div>
           </li>
           <li class="catalog-item">
             <img src="img/img-pink.jpg" width="360" height="576" alt="шаблон сайта Пинк">
-            <h3><a href="#">Pink app</a></h3>
-            <p>Продуктовый лендинг приложения для iOS и Android</p>
-            <a class="button" href="#">9 990руб.</a>
+            <div class="item-wrapper">
+              <h3 class="item-title"><a href="#">Pink app</a></h3>
+              <p class="item-desc">Продуктовый лендинг приложения для iOS и Android</p>
+              <a class="button" href="#">9 990руб.</a>
+            </div>
           </li>
           <li class="catalog-item">
             <img src="img/img-barbershop.jpg" width="360" height="576" alt="шаблон сайта Барбершоп">
-            <h3><a href="#">Barbershop</a></h3>
-            <p>Сайт салоны красоты. Для мужчин, да.</p>
-            <a class="button" href="#">9 990руб.</a>
+            <div class="item-wrapper">
+              <h3 class="item-title"><a href="#">Barbershop</a></h3>
+              <p class="item-desc">Сайт салоны красоты. Для мужчин, да.</p>
+              <a class="button" href="#">9 990руб.</a>
+            </div>
           </li>
           <li class="catalog-item">
             <img src="img/img-mishka.jpg" width="360" height="576" alt="шаблон сайта Мишка">
-            <h3><a href="#">Mishka</a></h3>
-            <p>Интернет-магазин вязаных игрушек</p>
-            <a class="button" href="#">9 990руб.</a>
+            <div class="item-wrapper">
+              <h3 class="item-title"><a href="#">Mishka</a></h3>
+              <p class="item-desc">Интернет-магазин вязаных игрушек</p>
+              <a class="button" href="#">9 990руб.</a>
+            </div>
           </li>
           <li class="catalog-item">
             <img src="img/img-aplus.jpg" width="360" height="576" alt="шаблон сайта А плюс">
-            <h3><a href="#">A plus</a></h3>
-            <p>Лендинг курсов повышения квалификации</p>
-            <a class="button" href="#">9 990руб.</a>
+            <div class="item-wrapper">
+              <h3 class="item-title"><a href="#">A plus</a></h3>
+              <p class="item-desc">Лендинг курсов повышения квалификации</p>
+              <a class="button" href="#">9 990руб.</a>
+            </div>
           </li>
           <li class="catalog-item">
             <img src="img/img-kvast.jpg" width="360" height="576" alt="шаблон сайта Кваст">
-            <h3><a href="#">Кваст</a></h3>
-            <p>Промо-сайт производителя крафтового кваса</p>
-            <a class="button" href="#">9 990руб.</a>
+            <div class="item-wrapper">
+              <h3 class="item-title"><a href="#">Кваст</a></h3>
+              <p class="item-desc">Промо-сайт производителя крафтового кваса</p>
+              <a class="button" href="#">9 990руб.</a>
+            </div>
           </li>
         </ul>
         <ul class="pagination-list">
