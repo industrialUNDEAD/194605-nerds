@@ -38,6 +38,7 @@ a {
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 .button {
@@ -63,7 +64,9 @@ img {
   opacity: 0.3;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
