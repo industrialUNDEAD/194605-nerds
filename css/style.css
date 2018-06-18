@@ -1,21 +1,23 @@
 @font-face {
   font-family: "roboto";
-  src: url("../fonts/roboto.woff2") format("woff2");
-  src: url("../fonts/roboto.woff") format("woff");
+  src: url("../fonts/roboto.woff2") format("woff2"),
+       url("../fonts/roboto.woff") format("woff");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "roboto";
-  src: url("../fonts/robotobold.woff2") format("woff2");
-  src: url("../fonts/robotobold.woff") format("woff");
+  src: 
+    url("../fonts/robotobold.woff2") format("woff2"),
+    url("../fonts/robotobold.woff") format("woff");
   font-weight: 700;
 }
 
 @font-face {
   font-family: "roboto";
-  src: url("../fonts/robotomedium.woff2") format("woff2");
-  src: url("../fonts/robotomedium.woff") format("woff");
+  src: 
+      url("../fonts/robotomedium.woff2") format("woff2"),
+      url("../fonts/robotomedium.woff") format("woff");
   font-weight: 500;
 }
 
@@ -55,13 +57,14 @@ img {
   border: none;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
   background-color: #e74246;
 }
 
 .button:active {
+  color: rgba(255, 255, 255, 0.3);
   background-color: #d7373b; /*надо разобраться, как менять полупрозрачность, только у текста*/
-  opacity: 0.3;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -81,6 +84,7 @@ input[type="radio"].visually-hidden {
   width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  box-sizing: border-box;
 }
 
 /*----------------------------------шапка сайта---------------------------------------*/
@@ -94,6 +98,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header {
+  padding-top: 30px; 
   width: 100%;
   font-size: 16px;
   line-height: 30px;
@@ -116,6 +121,7 @@ input[type="radio"].visually-hidden {
 
 .main-navigation  .navigation-list {
   display: flex;
+  flex-wrap: wrap;
   width: 440px;
   margin: 0;
   padding: 0;
@@ -123,34 +129,107 @@ input[type="radio"].visually-hidden {
 }
 
 .navigation-list .navigation-item {
-  padding-left: 45px;
+  display: block;
+  padding-right: 45px;
+  font-weight: 500;
+  line-height: 30px
+  text-transform: uppercase;
+  vertical-align: middle;
 }
 
 /*------------------------------------шапка сайта--------------------------------------*/
 
 .slider {
+  position: relative;
   margin-bottom: 80px;
   background-color: #eeeeee;
 }
 
-.slide-content {
-  width: 380px;
+.slider-controls {
+  position: absolute;
+  left: 50%;
+  bottom: 104px;
+  z-index: 100;
+  width: 160px;
+  height: 18px;
+  text-align: center;
+  font-size: 0;
+  transform: translateX(-50%);
 }
 
-.slide-logo {
-  width: 760px;
+.slider-controls i {
+  position: relative;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
-.slider-block {
-  display: flex;
-  justify-content: space-between;
+.slider-controls i::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+  width: 18px;
+  height: 18px;
+  
+  background: #ffffff;
+  border-radius: 50%;
 }
 
-.slider-block .slogan {
+.slider-controls .active::before {
+  
+}
+
+.slider-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slider-item {
+  display: none;
+  padding: 78px 0 80px 0;
+}
+
+.slider-item:nth-child(1) {
+ display: block;
+}
+
+.slider-item:nth-child(1) {
+  background-image: url("img/slide1.png");
+  background-repeat: no-repeat;
+  background-position: 93% 18px;
+}
+
+.slider-item:nth-child(2) {
+  background-image: url("img/slide2.png");
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+}
+
+.slider-item:nth-child(3) {
+  background-image: url("img/slide3.png");
+  background-repeat: no-repeat;
+  background-position: 100% 20px;
+}
+
+.slider-item h3 {
+  max-width: 600px;
+  margin: 0;
+  margin-bottom: 27px;
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
-  color: #000000;
+}
+
+.slider-item p {
+  max-width: 430px;
+  margin: 0;
+  margin-bottom: 38px;
 }
 
 .services {
