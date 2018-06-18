@@ -36,7 +36,12 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 .button {
+  padding: 16px 55px;
   font: inherit;
   line-height: 18px;
   font-weight: 500;
@@ -45,6 +50,7 @@ a {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #fb565a;
+  border-radius: 3px;
   border: none;
 }
 
@@ -107,11 +113,14 @@ a {
 
 .main-navigation  .navigation-list {
   display: flex;
-  justify-content: space-between;
   width: 440px;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.navigation-list .navigation-item {
+  padding-left: 45px;
 }
 
 /*------------------------------------шапка сайта--------------------------------------*/
