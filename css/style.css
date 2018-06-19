@@ -264,7 +264,7 @@ input[type="radio"].visually-hidden {
 
 .services {
   margin-bottom: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 92px;
   border-bottom: 2px solid #eeeeee;
 }
 
@@ -285,7 +285,7 @@ input[type="radio"].visually-hidden {
 .services-list .services-item::before {
   content: "";
   position: absolute;
-  bottom: 160px;
+  bottom: 190px;
   width: 300px;
   height: 146px;
   background-repeat: no-repeat;
@@ -313,12 +313,40 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
+.services-item .desc {
+  margin-bottom: 45px;
+  max-width: 260px;
+}
+
+.services .button {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 .services-item .button-application {
   background-color: #00ca74;
 }
 
+.services-item .button-application:hover,
+.services-item .button-application:focus {
+  background-color: #00bc6c;
+}
+
+.services-item .button-application:acrive {
+  background-color: #00aa62;
+}
+
 .services-item .button-presentation {
   background-color: #efc84a;
+}
+
+.services-item .button-presentation:hover,
+.services-item .button-presentation:focus {
+  background-color: #eab534;
+}
+
+.services-item .button-presentation:active {
+  background-color: #e5a722;
 }
 
 .columns-wrapper {
