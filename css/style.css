@@ -263,7 +263,7 @@ input[type="radio"].visually-hidden {
 }
 
 .services {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   padding-bottom: 92px;
   border-bottom: 2px solid #eeeeee;
 }
@@ -356,6 +356,7 @@ input[type="radio"].visually-hidden {
 }
 
 .columns-wrapper .about-us {
+  padding-top: 15px;
   width: 660px;
 }
 
@@ -364,27 +365,91 @@ input[type="radio"].visually-hidden {
 } 
 
 .about-us .tagline {
+  display: block;
+  margin-bottom: 30px;
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
   color: #000000;
 }
 
+.about-us .about-us-desc {
+  margin: 0;
+  margin-bottom: 41px;
+}
+
 .about-us .our-service {
+  margin: 0;
+  margin-bottom: 20px;
   font-weight: 700;
+  text-transform: uppercase;
   color: #000000;
 }
 
+.about-us .development-list {
+  margin: 0;
+  padding-left: 35px;
+  list-style: none;
+}
+
+.development-list .development-item {
+  position: relative;
+  margin-bottom: 27px;
+}
+
+.development-item::before {
+  position: absolute;
+  content: "";
+  right: 670px;
+  top: 8px;
+  width: 25px;
+  height: 1px;
+  background-color: #fb565a;
+}
+
+.statistics .statistics-info {
+  width: 360px;
+  border: 1px solid red;
+}
+
+.statistics::before {
+  content: "";
+  margin-bottom: 28px;
+  display: inline-block;
+  width: 360px;
+  height: 208px;
+  background-image: url(../img/nerds-illustration.png);
+}
+
 .statistics-info .table-desc {
+  margin-bottom: 42px;
   font-weight: 700;
+  text-transform: uppercase;
   color: #000000;
 }
 
 .statistics-info .top-line {
+  padding-bottom: 20px;
+  width: 100px;
+  height: 35px;
   font-size: 45px;
   line-height: 10.06px;
   font-weight: 700;
+  /*vertical-align: top;*/
+  text-align: left;
+  border: 1px solid orange;
   color: #000000;
+}
+
+.statistics-info .percent {
+  position: relative;
+  bottom: 15px;
+  font-size: 25px;
+}
+
+.bottom-line {
+  line-height: 18px;
+  border: 1px solid orange;
 }
 
 .studio-projects {
