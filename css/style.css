@@ -92,7 +92,7 @@ input[type="radio"].visually-hidden {
 .main-header .container {
   display: flex;
   justify-content: space-between;
-  padding-top: 15px;
+  padding-top: 10px;
   align-items: center;
   outline: 2px dotted red;
 }
@@ -352,7 +352,7 @@ input[type="radio"].visually-hidden {
 .columns-wrapper {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 77px;
+  margin-bottom: 40px;
 }
 
 .columns-wrapper .about-us {
@@ -366,7 +366,8 @@ input[type="radio"].visually-hidden {
 
 .about-us .tagline {
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
+  padding-top: 18px;
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
@@ -375,12 +376,12 @@ input[type="radio"].visually-hidden {
 
 .about-us .about-us-desc {
   margin: 0;
-  margin-bottom: 41px;
+  margin-bottom: 25px;
 }
 
 .about-us .our-service {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
@@ -414,7 +415,7 @@ input[type="radio"].visually-hidden {
 
 .statistics::before {
   content: "";
-  margin-bottom: 28px;
+  margin-bottom: 30px;
   display: inline-block;
   width: 360px;
   height: 208px;
@@ -422,7 +423,7 @@ input[type="radio"].visually-hidden {
 }
 
 .statistics-info .table-desc {
-  margin-bottom: 42px;
+  margin-bottom: 45px;
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
@@ -459,10 +460,19 @@ input[type="radio"].visually-hidden {
 
 .studio-projects .projects-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0;
-  padding: 45px 0;
+  padding: 0;
   list-style: none;
+}
+
+.studio-projects .projects-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 260px;
+  height: 180px;
 }
 
 .projects-list img {
