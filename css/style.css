@@ -494,32 +494,50 @@ input[type="radio"].visually-hidden {
 }
 
 .location-wrapper {
-  min-height: 416px; /*временно, пока карты нет*/
+  min-height: 361px; временно, пока карты нет
   margin-bottom: 79px;
   padding-top: 54px;
   outline: 2px dotted red;
 }
 
-.info-wrapper .container {
-  /*padding-top: 54px;*/
-  /*padding-bottom: 54px;*/
+.main-footer {
+  width: 1440px;
+  height: 415px;
+  content: "";
+  background: 
+    url(../img/map-marker.png) no-repeat 68% 40%,
+    url(../img/map.jpg) no-repeat 100% 0;
 }
 
 .location-info {
-  width: 320px;
-  padding-top: 50.5px;
-  padding-bottom: 47px;
+  width: 222px;
+  padding-top: 46px;
+  padding-bottom: 65px;
   padding-left: 50px;
-  padding-right: 77px;
-  border: 1px solid white;
+  padding-right: 50px;
+  background-color: #ffffff;
+  /*border: 1px solid white;*/
   outline: 2px dotted green;
 }
 
 .location-info .location-title {
+  margin: 0;
+  margin-bottom: 27px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   color: #000000;
+}
+
+.location-info .location-desc {
+  margin: 0;
+  margin-bottom: 48px;
+  line-height: 18px;
+}
+
+.location-info .location-button {
+  padding-left: 45px;
+  padding-right: 45px;
 }
 
 .footer-bottom.container {
