@@ -751,8 +751,9 @@ input[type="radio"].visually-hidden {
 
 .container .page-title {
   margin: 0 auto;
-  padding-top: 102px;
-  padding-bottom: 117px; 
+  padding-top: 75px;
+  padding-left: 25px;
+  padding-bottom: 110px; 
   width: 760px;
   font-size: 55px;
   line-height: 55px;
