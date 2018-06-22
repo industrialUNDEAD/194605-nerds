@@ -494,8 +494,8 @@ input[type="radio"].visually-hidden {
 }
 
 .location-wrapper {
-  min-height: 361px; временно, пока карты нет
-  margin-bottom: 79px;
+  min-height: 361px;
+  margin-bottom: 70px;
   padding-top: 54px;
   outline: 2px dotted red;
 }
@@ -542,20 +542,61 @@ input[type="radio"].visually-hidden {
 
 .footer-bottom.container {
   display: flex;
+  padding-bottom: 80px;
+}
+
+.footer-bottom .bottom-item {
+  margin-right: 140px;
 }
 
 .footer-social {
-  width: 300px;
+  /*width: 300px;*/
 }
 
 .footer-social .social-list {
   display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 260px;
   list-style: none;
 }
 
+.social-list .social-item {
+  display: flex;
+  width: 80px;
+  /*align-items: center;*/
+  /*justify-content: center;*/
+}
+
 .social-button {
+  /*display: flex;*/
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
   color: #000000;
-  background-color: #e1e1e1;
+  background-color: #e1e1e1
+
+}
+
+.social-list .button-vk {
+  background-image: url(../img/vk-icon.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.social-list .button-fb {
+  background-image: url(../img/fb-icon.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.social-list .button-insta {
+  background-image: url(../img/insta-icon.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .social-button:hover {
@@ -568,15 +609,25 @@ input[type="radio"].visually-hidden {
 }
 
 .notification-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   margin: 0;
+  padding-top: 5px;
   width: 580px;
+  line-height: 22px;
 }
 
 .notification-block .lead {
+  margin-bottom: -10px;
   font-size: 36px;
   line-height: 36px;
   font-weight: 700;
   color: #000000;
+}
+
+.modal-feedback {
+ display: none;
 }
 
 .modal-feedback .modal-title {
