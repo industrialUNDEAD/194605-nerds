@@ -749,6 +749,7 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-feedback {
+  z-index: 1;
   position: fixed;
   margin-left: -480px;
   padding: 70px 100px 85px;
