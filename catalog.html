@@ -2,18 +2,24 @@
 <html lang="ru">
 <head>
   <title>Дизайн-студия "Нёрдс"</title>
+  <meta charset="utf-8">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/min-style.css">
 </head>
 <body class="inner-page">
   <header class="main-header">
     <div class="container">
-      <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
+      <div class="main-logo">
+        <a href="index.html">
+          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
+        </a>
+      </div>
       <nav class="main-navigation">
         <ul class="navigation-list">
           <li class="navigation-item"><a href="#">студия</a></li>
           <li class="navigation-item"><a href="#">клиенты</a></li>
-          <li class="navigation-item"><a href="#">магазин</a></li>
+          <li class="navigation-item item-current">магазин</li>
           <li class="navigation-item"><a href="#">контакты</a></li>
         </ul>
       </nav>
@@ -54,43 +60,43 @@
           </fieldset>
           <fieldset class="filter-item item-radio">
             <legend class="group-grid">Сетка:</legend>
-            <ul>
+            <ul class="form-list">
               <li class="filter-option">
-                <input class="visually-hidden" type="radio" name="layout-selection" value="adaptive" id="filter-adaptive" checked>
-                <label for="filter-adaptive">Адаптивная</label>
+                <input class="hidden-input" type="radio" name="layout-selection" value="adaptive" id="filter-adaptive" checked>
+                <label class="label-from" for="filter-adaptive">Адаптивная</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden" type="radio" name="layout-selection" value="fixed" id="filter-fixed">
-                <label for="filter-fixed">Фиксированная</label>
+                <input class="hidden-input" type="radio" name="layout-selection" value="fixed" id="filter-fixed">
+                <label class="label-from" for="filter-fixed">Фиксированная</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden" type="radio" name="layout-selection" value="stretching" id="filter-stretching">
-                <label for="filter-stretching">Резиновая</label>
+                <input class="hidden-input" type="radio" name="layout-selection" value="stretching" id="filter-stretching">
+                <label class="label-from" for="filter-stretching">Резиновая</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="filter-item item-checkbox">
             <legend class="group-features">Особенности:</legend>
-            <ul>
+            <ul class="form-list">
               <li class="filter-option">
-                <input class="visually-hidden" type="checkbox" name="slider" id="filter-slider" checked>
-                <label for="filter-slider">Слайдер</label>
+                <input class="hidden-input" type="checkbox" name="slider" id="filter-slider" checked>
+                <label class="label-from" for="filter-slider">Слайдер</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden" type="checkbox" name="advantages" id="filter-advantages">
-                <label for="filter-advantages">Блок преимуществ</label>
+                <input class="hidden-input" type="checkbox" name="advantages" id="filter-advantages">
+                <label class="label-from" for="filter-advantages">Блок преимуществ</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden" type="checkbox" name="news" id="filter-news" checked>
-                <label for="filter-news">Новости</label>
+                <input class="hidden-input" type="checkbox" name="news" id="filter-news" checked>
+                <label class="label-from" for="filter-news">Новости</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden" type="checkbox" name="gallery" id="filter-gallery">
-                <label for="filter-gallery">Галерея</label>
+                <input class="hidden-input" type="checkbox" name="gallery" id="filter-gallery">
+                <label class="label-from" for="filter-gallery">Галерея</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden" type="checkbox" name="cart" id="filter-cart">
-                <label for="filter-cart">Корзина</label>
+                <input class="hidden-input" type="checkbox" name="cart" id="filter-cart">
+                <label class="label-from" for="filter-cart">Корзина</label>
               </li>
             </ul>
           </fieldset>
@@ -124,52 +130,52 @@
           </div>
         </div>
         <ul class="catalog-list">
-          <li class="catalog-item">
+          <li class="catalog-item" tabindex="0">
             <img src="img/img-sedona.jpg" width="360" height="576" alt="шаблон сайта Седона">
             <div class="item-wrapper">
               <h3 class="item-title"><a href="#"> Sedona</a></h3>
               <p class="item-desc">Информационный сайт для туристов</p>
-              <a class="button" href="#">9 990руб.</a>
+              <a class="button" href="#" tabindex="0">9 990руб.</a>
             </div>
           </li>
-          <li class="catalog-item">
+          <li class="catalog-item" tabindex="0">
             <img src="img/img-pink.jpg" width="360" height="576" alt="шаблон сайта Пинк">
             <div class="item-wrapper">
               <h3 class="item-title"><a href="#">Pink app</a></h3>
               <p class="item-desc">Продуктовый лендинг приложения для iOS и Android</p>
-              <a class="button" href="#">9 990руб.</a>
+              <a class="button" href="#" tabindex="0">9 990руб.</a>
             </div>
           </li>
-          <li class="catalog-item">
+          <li class="catalog-item" tabindex="0">
             <img src="img/img-barbershop.jpg" width="360" height="576" alt="шаблон сайта Барбершоп">
             <div class="item-wrapper">
               <h3 class="item-title"><a href="#">Barbershop</a></h3>
               <p class="item-desc">Сайт салоны красоты. Для мужчин, да.</p>
-              <a class="button" href="#">9 990руб.</a>
+              <a class="button" href="#" tabindex="0">9 990руб.</a>
             </div>
           </li>
-          <li class="catalog-item">
+          <li class="catalog-item" tabindex="0">
             <img src="img/img-mishka.jpg" width="360" height="576" alt="шаблон сайта Мишка">
             <div class="item-wrapper">
               <h3 class="item-title"><a href="#">Mishka</a></h3>
               <p class="item-desc">Интернет-магазин вязаных игрушек</p>
-              <a class="button" href="#">9 990руб.</a>
+              <a class="button" href="#" tabindex="0">9 990руб.</a>
             </div>
           </li>
-          <li class="catalog-item">
+          <li class="catalog-item" tabindex="0">
             <img src="img/img-aplus.jpg" width="360" height="576" alt="шаблон сайта А плюс">
             <div class="item-wrapper">
               <h3 class="item-title"><a href="#">A plus</a></h3>
               <p class="item-desc">Лендинг курсов повышения квалификации</p>
-              <a class="button" href="#">9 990руб.</a>
+              <a class="button" href="#" tabindex="0">9 990руб.</a>
             </div>
           </li>
-          <li class="catalog-item">
+          <li class="catalog-item" tabindex="0">
             <img src="img/img-kvast.jpg" width="360" height="576" alt="шаблон сайта Кваст">
             <div class="item-wrapper">
               <h3 class="item-title"><a href="#">Кваст</a></h3>
               <p class="item-desc">Промо-сайт производителя крафтового кваса</p>
-              <a class="button" href="#">9 990руб.</a>
+              <a class="button" href="#" tabindex="0">9 990руб.</a>
             </div>
           </li>
         </ul>
@@ -183,6 +189,7 @@
     </div>
   </main>
   <footer class="main-footer">
+    <iframe class="interactive-map" src="https://yandex.ru/map-widget/v1/-/CBuujSEN-B" width="100%" height="415" frameborder="1" allowfullscreen="true"></iframe>
     <div class="location-wrapper">
       <div class="info-wrapper container">
         <section class="location-info">
@@ -202,22 +209,26 @@
           <li class="social-item"><a class="social-button button-insta" href="#"><span class="visually-hidden">инстаграм</span></a></li>
         </ul>
       </div>
-      <p class="notification-block bottom-item"><b class="lead">Давайте дружить, это выгодно!</b><br>
-    Скидка 10% для друзей из социальных сетей.</p>
+      <div class="footer-promo bottom-item">
+        <b class="lead">Давайте дружить, это выгодно!</b><br>
+        <p class="notification-block">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
     </div>
   </footer>
   <section class="modal-feedback">
     <h2 class="modal-title">Напишите нам</h2>
     <form class="form-feedback" action="https://echo.htmlacademy.ru" method="post">
-      <p>
-        <label for="name-field">Ваше имя:</label>
-        <input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
-      </p>
-      <p>
-        <label for="mail-field">Ваш e-mail:</label>
-        <input type="email" name="e-mail" id="mail-field" placeholder="email@example.com">
-      </p>
-      <p>
+      <div class="field-wrapper">
+        <p class="name-block">
+          <label for="name-field">Ваше имя:</label>
+          <input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
+        </p>
+        <p class="mail-block">
+          <label for="mail-field">Ваш e-mail:</label>
+          <input type="email" name="e-mail" id="mail-field" placeholder="email@example.com">
+        </p>
+      </div>
+      <p class="textarea-block">
         <label for="message-field">Текст письма:</label>
         <textarea name="message" id="message-field" placeholder="В свободной форме"></textarea>
       </p>
@@ -225,5 +236,7 @@
     </form>
     <button class="modal-close" type="button">Закрыть</button>
   </section>
+  <script src="js/script.js"></script>
+  <script src="min-js.js"></script>
 </body>
 </html>

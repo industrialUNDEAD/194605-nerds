@@ -2,18 +2,24 @@
 <html lang="ru">
 <head>
   <title>Дизайн-студия "Нёрдс"</title>
+  <meta charset="utf-8">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/min-style.css">
 </head>
 <body>
   <header class="main-header">
     <div class="container">
-      <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
+      <div class="main-logo">
+        <a>
+          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
+        </a>
+      </div>
       <nav class="main-navigation">
         <ul class="navigation-list">
           <li class="navigation-item"><a href="#">студия</a></li>
           <li class="navigation-item"><a href="#">клиенты</a></li>
-          <li class="navigation-item"><a href="#">магазин</a></li>
+          <li class="navigation-item"><a href="catalog.html">магазин</a></li>
           <li class="navigation-item"><a href="#">контакты</a></li>
         </ul>
       </nav>
@@ -27,10 +33,13 @@
     <article class="slider">
       <h2 class="visually-hidden">Наша презентация</h2>
       <div class="container">
+        <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+        <input class="visually-hidden" type="radio" id="product-3" name="toggle">
         <div class="slider-controls">
-          <i class="active"></i>
-          <i></i>
-          <i></i>
+          <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
+          <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
+          <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
         </div>
         <ul class="slider-list">
           <li class="slider-item">
@@ -75,7 +84,7 @@
       <div class="columns-wrapper">
         <section class="about-us">
           <h2 class="visually-hidden">О нас</h2>
-          <b class="about-us tagline">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
+          <b class="about-us tagline">Мы – маленькая, но гордая дизайн-студия из Краснодара.</b>
           <p class="about-us-desc">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
           <p class="about-us our-service">Выполняем заказы на разработку:</p>
           <ul class="about-us development-list">
@@ -104,7 +113,7 @@
       <section class="studio-projects">
         <h2 class="visually-hidden">Наши проекты</h2>
         <ul class="projects-list">
-          <li class="projects-item"><a href="#"><img src="img/logo-1.png" width="202" height="70" alt="html academy"></a></li>
+          <li class="projects-item"><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" width="202" height="70" alt="html academy"></a></li>
           <li class="projects-item"><a href="#"><img src="img/logo-2.png" width="210" height="91" alt="barbershop borodinski"></a></li>
           <li class="projects-item"><a href="#"><img src="img/logo-3.png" width="185" height="51" alt="pink"></a></li>
           <li class="projects-item"><a href="#"><img src="img/logo-4.png" width="175" height="78" alt="mishka"></a></li>
@@ -113,6 +122,7 @@
     </div>
   </main>
   <footer class="main-footer">
+    <iframe class="interactive-map" src="https://yandex.ru/map-widget/v1/-/CBuujSEN-B" width="100%" height="415" frameborder="1" allowfullscreen="true"></iframe>
     <div class="location-wrapper">
       <div class="info-wrapper container">
         <section class="location-info">
@@ -132,22 +142,26 @@
           <li class="social-item"><a class="social-button button-insta" href="#"><span class="visually-hidden">инстаграм</span></a></li>
         </ul>
       </div>
-      <p class="notification-block bottom-item"><b class="lead">Давайте дружить, это выгодно!</b><br>
-    Скидка 10% для друзей из социальных сетей.</p>
+      <div class="footer-promo bottom-item">
+        <b class="lead">Давайте дружить, это выгодно!</b><br>
+        <p class="notification-block">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
     </div>
   </footer>
   <section class="modal-feedback">
     <h2 class="modal-title">Напишите нам</h2>
     <form class="form-feedback" action="https://echo.htmlacademy.ru" method="post">
-      <p>
-        <label for="name-field">Ваше имя:</label>
-        <input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
-      </p>
-      <p>
-        <label for="mail-field">Ваш e-mail:</label>
-        <input type="email" name="e-mail" id="mail-field" placeholder="email@example.com">
-      </p>
-      <p>
+      <div class="field-wrapper">
+        <p class="name-block">
+          <label for="name-field">Ваше имя:</label>
+          <input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
+        </p>
+        <p class="mail-block">
+          <label for="mail-field">Ваш e-mail:</label>
+          <input type="email" name="e-mail" id="mail-field" placeholder="email@example.com">
+        </p>
+      </div>
+      <p class="textarea-block">
         <label for="message-field">Текст письма:</label>
         <textarea name="message" id="message-field" placeholder="В свободной форме"></textarea>
       </p>
@@ -155,5 +169,7 @@
     </form>
     <button class="modal-close" type="button">Закрыть</button>
   </section>
+  <script src="js/script.js"></script>
+  <script src="min-js.js"></script>
 </body>
 </html>
