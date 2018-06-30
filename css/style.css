@@ -572,6 +572,7 @@ input[type="radio"].visually-hidden {
 .interactive-map {
   z-index: 0;
   position: absolute;
+  width: 100%;
 }
 
 .location-info {
