@@ -116,8 +116,10 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
-.main-header a:hover,
-.main-header a:focus {
+.navigation-list a:hover,
+.navigation-list a:focus,
+.cart a:hover,
+.cart a:focus {
   color: #fb565a;
   outline: none;
 }
@@ -348,10 +350,12 @@ input[type="radio"].visually-hidden {
 
 .services-item:nth-child(2)::before {
   background-image: url("../img/illustration-2.png");
+  background-color: #00ca74;
 }
 
 .services-item:nth-child(3)::before {
   background-image: url("../img/illustration-3.png");
+  background-color: #efc849;
 }
 
 .services-item .services-title {
@@ -442,7 +446,7 @@ input[type="radio"].visually-hidden {
 
 .about-us .development-list {
   margin: 0;
-  padding-top: 17px;
+  padding-top: 15px;
   padding-left: 35px;
   list-style: none;
 }
@@ -460,7 +464,7 @@ input[type="radio"].visually-hidden {
   top: 50%;
   transform: translateY(-50%);
   width: 25px;
-  height: 2px;
+  height: 3px;
   background-color: #fb565a;
 }
 
@@ -698,7 +702,7 @@ input[type="radio"].visually-hidden {
   flex-direction: column;
   justify-content: flex-start;
   margin: 0;
-  padding-top: 5px;
+  padding-top: 10px;
   width: 580px;
   line-height: 22px;
 }
@@ -888,6 +892,7 @@ input[type="radio"].visually-hidden {
 }
 
 .form-feedback input:invalid {
+  color: #e74246;
   border: 2px solid #7f2d2f;
 }
 
@@ -1182,6 +1187,11 @@ input[type="checkbox"]:checked + .label-from::before {
   background-image: url(../img/checkbox-on.svg);
 }
 
+input[type="radio"]:disabled. + .label-from::before,
+input[type="checkbox"]:disabled. + .label-from::before {
+  opacity: 0.3;
+}
+
 .filter .button-filter {
   width: 100%;
 }
@@ -1392,7 +1402,7 @@ input[type="checkbox"]:checked + .label-from::before {
 
 .pagination-list .pagination-item {
   display: block;
-  margin-right: 11px;
+  margin-right: 8px;
   padding: 12px 21px;
   border-radius: 5px;
 }
@@ -1404,6 +1414,20 @@ input[type="checkbox"]:checked + .label-from::before {
   background-color: #eeeeee;
 }
 
+.pagination-item-current {
+  display: block;
+  margin-right: 8px;
+  padding: 10px 18px;
+  border-radius: 5px;
+  border: 3px solid #dbdbdb;
+  background-color: #ffffff;
+}
+
+.pagination-item.pagination-item-next {
+  padding: 12px 80px;
+  text-transform: uppercase;
+}
+
 .filter .button-filter:hover,
 .pagination-list .pagination-item:hover {
   background-color: #dfdfdf;
@@ -1413,20 +1437,6 @@ input[type="checkbox"]:checked + .label-from::before {
 .pagination-list .pagination-item:active {
   background-color: #d5d5d5;
   opacity: 0.3;
-}
-
-.pagination-item-current {
-  display: block;
-  margin-right: 11px;
-  padding: 10px 18px;
-  border-radius: 5px;
-  border: 3px solid #dbdbdb;
-  background-color: #ffffff;
-}
-
-.pagination-item.pagination-item-next {
-  padding: 12px 79px;
-  text-transform: uppercase;
 }
 
 .inner-page .main-footer {
