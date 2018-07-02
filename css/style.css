@@ -102,7 +102,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header {
-  padding-top: 25px; 
+  padding-top: 39px; 
   width: 100%;
   font-size: 16px;
   line-height: 30px;
@@ -133,6 +133,7 @@ input[type="radio"].visually-hidden {
   display: -ms-flexbox;
   -ms-flex-wrap: wrap;
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
@@ -143,7 +144,6 @@ input[type="radio"].visually-hidden {
 
 .navigation-list .navigation-item {
   display: block;
-  padding-right: 45px;
   font-weight: 500;
   line-height: 30px;
   vertical-align: middle;
@@ -604,8 +604,15 @@ input[type="radio"].visually-hidden {
 
 .location-info .location-desc {
   margin: 0;
-  margin-bottom: 48px;
+  margin-bottom: 15px;
+  width: 210px;
   line-height: 18px;
+}
+
+.location-info .location-call {
+  margin: 0;
+  margin-bottom: 48px;
+  width: 210px;
 }
 
 .location-info .location-button {
@@ -982,8 +989,8 @@ input[type="radio"].visually-hidden {
 
 .container .page-title {
   margin: 0 auto;
-  padding-top: 72px;
-  padding-left: 25px;
+  padding-top: 70px;
+  padding-left: 35px;
   padding-bottom: 110px; 
   width: 760px;
   font-size: 55px;
@@ -1033,7 +1040,7 @@ input[type="radio"].visually-hidden {
 }
 
 .item-range {
-  margin-bottom: 60px;
+  margin-bottom: 52px;
 }
 
 .item-radio {
@@ -1046,7 +1053,7 @@ input[type="radio"].visually-hidden {
 
 .range-controls {
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
   padding-top: 39px;
   padding-right: 20px;
   padding-left: 20px;
@@ -1107,6 +1114,7 @@ input[type="radio"].visually-hidden {
   width: 60px;
   font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
+  line-height: 22px;
   text-align: center;
   color: #283136;
   border: none;
@@ -1120,7 +1128,7 @@ input[type="radio"].visually-hidden {
 
 .filter-item legend {
   font-size: 18px;
-  line-height: 24px;
+  line-height: 30px;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -1132,6 +1140,10 @@ input[type="radio"].visually-hidden {
 
 .filter-option {
   margin-bottom: 15px;
+}
+
+.filter-option label {
+  line-height: 20px;
 }
 
 .label-from {
@@ -1287,6 +1299,10 @@ input[type="checkbox"]:disabled. + .label-from::before {
   margin-bottom: 55px;
 }
 
+.sort-wrapper .sort-list {
+  padding: 5px 0 0 5px;
+}
+
 .sort-list .sort-item {
   color: #000000;
   opacity: 0.3;
@@ -1402,8 +1418,9 @@ input[type="checkbox"]:disabled. + .label-from::before {
 
 .pagination-list .pagination-item {
   display: block;
-  margin-right: 8px;
-  padding: 12px 21px;
+  margin-right: 11px;
+  padding: 18px 20px 15px 22px;
+  line-height: 18px;
   border-radius: 5px;
 }
 
@@ -1416,15 +1433,17 @@ input[type="checkbox"]:disabled. + .label-from::before {
 
 .pagination-item-current {
   display: block;
-  margin-right: 8px;
-  padding: 10px 18px;
+  margin-right: 11px;
+  padding: 15px 17px 12px 18px;
+  line-height: 18px;
   border-radius: 5px;
   border: 3px solid #dbdbdb;
   background-color: #ffffff;
 }
 
 .pagination-item.pagination-item-next {
-  padding: 12px 80px;
+  padding: 18px 80px 17px 80px;
+  line-height: 18px;
   text-transform: uppercase;
 }
 
@@ -1440,5 +1459,5 @@ input[type="checkbox"]:disabled. + .label-from::before {
 }
 
 .inner-page .main-footer {
-  margin-top: 60px;
+  margin-top: 57px;
 }
