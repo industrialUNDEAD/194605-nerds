@@ -24,7 +24,6 @@
 body {
   margin: 0;
   padding: 0;
-  width: 1440px;
   min-width: 1440px;
   font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
@@ -568,11 +567,11 @@ input[type="radio"].visually-hidden {
 .main-footer {
   position: relative;
   content: "";
-  width: 1440px;
+  min-width: 1440px;
   min-height: 415px;
   background: 
-  url(../img/map-marker.png) no-repeat 68% 20%,
-  url(../img/map.jpg) no-repeat 100% 0;
+  url(../img/map-marker.png) no-repeat 63% 20%,
+  url(../img/map.jpg) no-repeat 50% 0px;
 }
 
 .interactive-map {
@@ -1176,31 +1175,31 @@ input[type="radio"].visually-hidden {
 }
 
 .label-from:hover::before,
-input[type="radio"]:focus + .label-from::before,
-input[type="checkbox"]:focus + .label-from::before {
+.radio-hidden:focus + .label-from::before,
+.checkbox-hidden:focus + .label-from::before {
   color: #4d4d4d;
   opacity: 1;
 }
 
-input[type="radio"] + .label-from::before {
+.radio-hidden + .label-from::before {
   background-image: url("../img/radio-off.svg");
 }
 
-input[type="radio"]:checked + .label-from::before {
+.radio-hidden:checked + .label-from::before {
   background-image: url("../img/radio-on.svg");
   background-repeat: no-repeat;
 }
 
-input[type="checkbox"] + .label-from::before {
+.checkbox-hidden + .label-from::before {
   background-image: url("../img/checkbox-off.svg");
 }
 
-input[type="checkbox"]:checked + .label-from::before {
+input.checkbox-hidden:checked + .label-from::before {
   background-image: url(../img/checkbox-on.svg);
 }
 
-input[type="radio"]:disabled. + .label-from::before,
-input[type="checkbox"]:disabled. + .label-from::before {
+input.radio-hidden:disabled. + .label-from::before,
+input.checkbox-hidden:disabled. + .label-from::before {
   opacity: 0.3;
 }
 
@@ -1383,6 +1382,7 @@ input[type="checkbox"]:disabled. + .label-from::before {
 
 .item-wrapper .item-title {
   display: inline-block;
+  vertical-align: baseline;
   min-width: 75px;
   margin-bottom: 16px;
   text-transform: uppercase;
