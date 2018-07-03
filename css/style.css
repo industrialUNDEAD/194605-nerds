@@ -50,6 +50,7 @@ img {
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
+  word-break: break-all;
   color: #ffffff;
   background-color: #fb565a;
   border-radius: 3px;
@@ -64,6 +65,7 @@ img {
 .button:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #d7373b; 
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -690,6 +692,7 @@ input[type="radio"].visually-hidden {
 .social-button:active {
   opacity: 0.3;
   background-color: #d7373b;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
 .footer-promo {
@@ -1378,6 +1381,7 @@ input.checkbox-hidden:disabled. + .label-from::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .item-wrapper .item-title {
@@ -1389,6 +1393,7 @@ input.checkbox-hidden:disabled. + .label-from::before {
 }
 
 .item-title a {
+  word-break: break-all;
   color: #000000;
 }
 
@@ -1397,6 +1402,7 @@ input.checkbox-hidden:disabled. + .label-from::before {
   width: 200px;
   line-height: 18px;
   text-align: center;
+  word-break: break-all;
 }
 
 .item-wrapper .button {
@@ -1456,6 +1462,7 @@ input.checkbox-hidden:disabled. + .label-from::before {
 .pagination-list .pagination-item:active {
   background-color: #d5d5d5;
   opacity: 0.3;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
 .inner-page .main-footer {
