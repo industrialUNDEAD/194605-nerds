@@ -638,6 +638,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
   padding: 0;
@@ -1393,7 +1394,6 @@ input.checkbox-hidden:disabled. + .label-from::before {
 }
 
 .item-title a {
-  word-break: break-all;
   color: #000000;
 }
 
@@ -1402,7 +1402,6 @@ input.checkbox-hidden:disabled. + .label-from::before {
   width: 200px;
   line-height: 18px;
   text-align: center;
-  word-break: break-all;
 }
 
 .item-wrapper .button {
