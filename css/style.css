@@ -66,6 +66,7 @@ img {
   color: rgba(255, 255, 255, 0.3);
   background-color: #d7373b; 
   box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+  outline: 0;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -588,7 +589,7 @@ input[type="radio"].visually-hidden {
   top: 55px;
   width: 222px;
   padding-top: 46px;
-  padding-bottom: 65px;
+  padding-bottom: 60px;
   padding-left: 50px;
   padding-right: 50px;
   background-color: #ffffff;
@@ -1424,7 +1425,7 @@ input.checkbox-hidden:disabled. + .label-from::before {
 .pagination-list .pagination-item {
   display: block;
   margin-right: 11px;
-  padding: 18px 20px 15px 22px;
+  padding: 15px 20px 15px 22px;
   line-height: 18px;
   border-radius: 5px;
 }
@@ -1439,7 +1440,7 @@ input.checkbox-hidden:disabled. + .label-from::before {
 .pagination-item-current {
   display: block;
   margin-right: 11px;
-  padding: 15px 17px 12px 18px;
+  padding: 15px 17px 10px 18px;
   line-height: 18px;
   border-radius: 5px;
   border: 3px solid #dbdbdb;
@@ -1447,7 +1448,7 @@ input.checkbox-hidden:disabled. + .label-from::before {
 }
 
 .pagination-item.pagination-item-next {
-  padding: 18px 80px 17px 80px;
+  padding: 15px 80px 17px 78px;
   line-height: 18px;
   text-transform: uppercase;
 }
