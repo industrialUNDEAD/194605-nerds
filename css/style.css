@@ -1403,7 +1403,7 @@ input.checkbox-hidden:disabled. + .label-from::before {
   align-items: center;
   bottom: 0px;
   width: 360px;
-  padding-top: 29px;
+  padding-top: 10px;
   padding-bottom: 10px;
   background-color: #eeeeee; 
 }
